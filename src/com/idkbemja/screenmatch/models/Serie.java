@@ -6,6 +6,15 @@ public class Serie extends Title {
     private int episodesperseason;
     private int minutesperepisode;
 
+    public Serie(String title, int year, int duration, boolean isInPlan, int seasons, int episodesperseason, int minutesperepisode) {
+        setTitle(title);
+        setYear(year);
+        setDuration(duration);
+        setInplan(isInPlan);
+        this.seasons = seasons;
+        this.episodesperseason = episodesperseason;
+        this.minutesperepisode = minutesperepisode;
+    }
     // Setters 
     public void setSeasons(int seasons) {
         this.seasons = seasons;

@@ -4,6 +4,11 @@ import com.idkbemja.screenmatch.calculate.Classification;
 
 public class Episode extends Serie implements Classification {
 
+    public Episode(String title, int year, int duration, boolean isInPlan, int seasons, int episodesperseason,
+            int minutesperepisode) {
+        super(title, year, duration, isInPlan, seasons, episodesperseason, minutesperepisode);
+    }
+
     private int number;
     private String name;
     private Serie serie;
