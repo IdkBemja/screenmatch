@@ -1,3 +1,4 @@
+import com.idkbemja.screenmatch.calculate.TimeCalculator;
 import com.idkbemja.screenmatch.models.Serie;
 
 public class App {
@@ -20,6 +21,9 @@ public class App {
         System.out.println(myfilm.getCount() + " notes.");
         System.out.println(myfilm.getResultCalc());
         System.out.println("===================================");
+
+        TimeCalculator timecalc = new TimeCalculator();
+        timecalc.include(myfilm);
 
     }
 }

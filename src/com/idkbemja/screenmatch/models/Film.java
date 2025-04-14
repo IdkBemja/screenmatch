@@ -1,6 +1,8 @@
 package com.idkbemja.screenmatch.models;
 
-public class Film extends Title {
+import com.idkbemja.screenmatch.calculate.Classification;
+
+public class Film extends Title implements Classification {
 
     // Attributes
     private String director;
@@ -11,6 +13,10 @@ public class Film extends Title {
 
     public String getDirector() {
         return director;
-    }    
+    }
 
+    @Override
+    public int getClassification() {
+        return (int) getResultCalc() / 2;
+    }    
 }
